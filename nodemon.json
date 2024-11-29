@@ -1,0 +1,7 @@
+{
+    "watch": ["src"],
+    "ignore": ["test"],
+    "ext": "ts,js,json",
+    "exec": "etsc && tscpaths -p tsconfig.json -s ./src -o ./dist/src",
+    "legacyWatch": true
+}

@@ -1,0 +1,10 @@
+service: storage
+configValidationMode: error
+
+provider:
+    name: aws
+
+constructs:
+    landing:
+        type: static-website
+        path: public

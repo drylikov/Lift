@@ -1,0 +1,12 @@
+service: storage
+configValidationMode: error
+
+provider:
+    name: aws
+
+constructs:
+    default:
+        type: storage
+    kmsEncryption:
+        type: storage
+        encryption: kms

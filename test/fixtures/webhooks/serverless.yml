@@ -1,0 +1,15 @@
+service: webhook
+
+provider:
+    name: aws
+
+constructs:
+    secure:
+        type: webhook
+        authorizer:
+            handler: authorizer.main
+        path: /secure
+    insecure:
+        type: webhook
+        insecure: true
+        path: /insecure

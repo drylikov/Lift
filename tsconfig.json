@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@lift/providers": ["src/providers"],
+            "@lift/constructs": ["src/constructs"],
+            "@lift/constructs/*": ["src/constructs/*"]
+        },
+        "declaration": true,
+        "importHelpers": true,
+        "module": "commonjs",
+        "outDir": "dist",
+        "strict": true,
+        "target": "es2019",
+        "lib": ["es2020"],
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "experimentalDecorators": true,
+        "isolatedModules": true,
+        "skipLibCheck": true,
+        "sourceMap": true
+    },
+    "include": ["src", "test", "dist/Monitoring.ts"]
+}
